@@ -16,8 +16,9 @@
     <version>2.0</version>
 
 
-
     <properties>
+        <hbatis.version>2.3.1</hbatis.version>
+
         <dockerfile-maven-version>1.4.12</dockerfile-maven-version>
 
 
@@ -186,7 +187,27 @@
             <artifactId>curator-recipes</artifactId>
             <version>${curator.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.mybatis.hbatis</groupId>
+            <artifactId>hbatis-core</artifactId>
+            <version>${hbatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.hbatis</groupId>
+            <artifactId>hbatis-orm</artifactId>
+            <version>${hbatis.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-log4j12</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.hbatis</groupId>
+            <artifactId>hbatis-spring</artifactId>
+            <version>${hbatis.version}</version>
+        </dependency>
 
     </dependencies>
 
