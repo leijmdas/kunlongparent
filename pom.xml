@@ -17,7 +17,7 @@
 
 
     <properties>
-        <hbatis.version>2.3.1</hbatis.version>
+        <hbatis.version>3.0.0</hbatis.version>
         <dockerfile-maven-version>1.4.12</dockerfile-maven-version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
